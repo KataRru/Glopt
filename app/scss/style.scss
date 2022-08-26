@@ -27,6 +27,8 @@ ul, li, p, h1, h2, h3, h4, h5, h6 {
 }
 
 //Import Blocks
+@import 'blocks/order';
+@import 'blocks/prices';
 @import 'blocks/agents';
 @import 'blocks/more';
 @import 'blocks/benefits';
