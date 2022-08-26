@@ -1,0 +1,83 @@
+.promo {
+    position: relative;
+    height: 100vh;
+    background: url(../img/promo_bg.png);
+    &__inner {
+        padding-top: 30px;
+        text-align: center;
+    }
+    &__dscr {
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 1.9; 
+        color: #fff;
+    }
+    &__title {
+        font-size: 72px;
+        color: rgb(236, 100, 75);
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 1.2;    
+    }
+    &__subtitle {
+        font-size: 42px;
+        font-weight: 400;
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+        line-height: 1.2;
+    }
+    .dots  {
+        position: absolute;
+        margin-top: 38px;
+        width: 10px;
+        height: 10px;
+        background-color: #fff;
+        border-radius: 100%;
+        right: 50%;
+    &__line {
+        &-right {
+            position: absolute;
+            top: 5px;
+            display: block;
+            width: 400px;
+            height: 0.1px;
+            margin: 0px 0 0 25px;
+            background-color: #fff;
+        }
+        &-left {
+            position: absolute;
+            top: 5px;
+            left: -414px;
+            display: block;
+            width: 400px;
+            height: 0.1px;
+            margin: 0px 25px 0 0;
+            background-color: #fff;
+        }
+    }
+    }
+    &__item {
+        padding-top: 80px;
+        display: flex;
+        justify-content: space-around;
+    }
+    &__items {
+        img {
+            width: 65px;
+            height: 60px;
+        }
+    }
+    &__text {
+        width: 270px;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.375;
+        text-align: center;
+        color: #fff;
+    }
+    &__btn {
+        padding-top: 40px;
+        width: 190px;
+        margin: 0 auto;
+    }
+}
