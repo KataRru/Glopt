@@ -1,8 +1,8 @@
 .prices {
-    padding-top: 80px;
+    padding: 80px 0;
     &__title {
         font-size: 26px;
-        font-weight: 400;
+        font-weight: 700;
         text-transform: uppercase;
         line-height: 0.885;
         text-align: center;
@@ -11,7 +11,7 @@
             display: block;
             width: 150px;
             height: 1px;
-            margin: 16px auto 17px auto;
+            margin: 22px auto 12px auto;
             background-color: #ec644b;
         }
     }

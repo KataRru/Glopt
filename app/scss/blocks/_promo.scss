@@ -76,8 +76,11 @@
         color: #fff;
     }
     &__btn {
-        padding-top: 40px;
         width: 190px;
-        margin: 0 auto;
+        margin: 40px auto 0 auto;
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
     }
 }
