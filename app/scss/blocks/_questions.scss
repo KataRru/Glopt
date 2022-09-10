@@ -45,11 +45,17 @@
         }
         textarea {
             margin-top: 10px;
+            padding: 10px 24px;
             width: 890px;
             height: 100px;
             border: 1px solid #bbbbbb;
             border-radius: 15px;
             resize: none;
+        }
+        input, textarea {
+            outline: none;
+            border: none;
+            border: solid 1px #f2f2f2;
         }
     }
 }

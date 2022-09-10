@@ -11,8 +11,9 @@
         line-height: 1.837;
         color: rgb(255, 255, 255);
         text-align: center;
+        cursor: pointer;
 		  &:hover {
-			box-shadow: #000 2px 2px 15px;
+			box-shadow: #000 4px 4px 15px;
 			color: #000;
 			transition: all .5s;
 		  }

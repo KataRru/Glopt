@@ -16,13 +16,7 @@
         font-weight: 300;
         font-size: 15px;
         line-height: 1.114;
-        color: #fff; 
-        &:hover {
-            cursor: pointer;
-            text-decoration: underline;
-            color: #ec644b;
-            transition: all .5s;
-        }   
+        color: #fff;   
     }
     &__dscr {
         font-size: 12px;
@@ -38,6 +32,12 @@
     a {
         text-decoration: none;
         color: #fff;
+        &:hover {
+            cursor: pointer;
+            text-decoration: underline;
+            color: #ec644b;
+            transition: all .4s;
+        } 
     }
     .contacts {
         display: flex;
