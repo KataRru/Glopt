@@ -1,15 +1,337 @@
 @media (max-width:1200px) {
-
+    .promo {
+        &__text {
+            width: 240px;
+        }
+    }
+    .benefits {
+        &__item {
+            grid-template-columns: 80px 377px;
+        }
+        &__points {
+            padding-bottom: 40px;
+            grid-template-columns: repeat(2, 458px);
+            row-gap: 50px;
+        }
+    }
+    .work {
+        &__item {
+            justify-content: start;
+            flex-wrap: wrap;
+            row-gap: 30px;
+            column-gap: 100px;
+            margin: 0 74px;
+        }
+    }
+    .prices {
+        &__cards {
+            justify-content: space-around;
+        }
+        &__card {
+            margin: 0 8px 0 8px;
+        }
+        &__species {
+            min-width: 229px;
+            padding: 20px 0 20px 0;
+        }
+    }
+    .plan {
+        &__item {
+            justify-content: space-around;
+        }
+    }
+    .questions {
+        form {
+            padding: 60px 34px 80px 34px;
+        }
+    }
+    .order {
+        form {
+            padding: 80px 0;
+        }
+        &__btn {
+            top: 305px;
+        }
+    }
+    .slider {
+        &__dscr {
+            padding: 0 57px;
+            width: 100%;
+        }
+        .slick-prev {
+            left: 35%;
+        }
+        .slick-next {
+            right: 35%;
+        }
+    }
 }
 
 @media (max-width:991px) {
-
+    .header {
+        &__item {
+            padding-top: 20px;
+            justify-content: space-around;
+        }
+        &__menu {
+            display: none;
+        }
+        &__link {
+            margin: 0 10px 0 10px
+        }
+        &__logo {
+            img {
+                width: 87px;
+                height: 90px;
+            }
+        }
+    }
+    .hamburger {
+        display: block;
+    }
+    .promo {
+        &__title {
+            font-size: 55px;
+            padding: 10px 0 15px 0;
+        }
+        &__subtitle {
+            font-size: 30px;
+        }
+        &__item {
+            flex-wrap: wrap;
+            row-gap: 40px;
+            column-gap: 6px;
+        }
+        .dots {
+            &__line {
+                &-left {
+                    left: -314px;
+                    width: 300px;
+                }
+                &-right {
+                    width: 300px;
+                }
+            }
+        }
+    }
+    .benefits {
+        &__points {
+            grid-template-columns: repeat(2, 342px);
+        }
+        &__item {
+            grid-template-columns: 70px 270px;
+        }
+    }
+    .work {
+        &__item {
+            align-items: center;
+            flex-direction: column;
+        }
+    }
+    .prices {
+        &__cards {
+            flex-wrap: wrap;
+            row-gap: 20px;
+        }
+    }
+    .order {
+        form {
+            input {
+                padding: 12px 30px 12px 20px;
+            }
+        }
+    }
+    .managers {
+        &__dscr {
+            width: 665px;
+        }
+    }
+    .reviews {
+        .slick-prev {
+            left: 27%;
+        }
+        .slick-next {
+            right: 27%;
+        }
+    }
+    .questions {
+        form {
+            padding: 60px 34px 80px 34px;
+            input {
+                width: 30%;
+                padding: 12px 40px 12px 14px;
+            }
+            textarea {
+                padding: 10px 14px;
+                width: 91%;
+            }
+        }
+    }
+    .footer {
+        &__dscr {
+            font-size: 13px;
+        }
+        &__phone {
+            margin-right: 10px;
+            font-size: 16px;
+            &-dscr {
+                padding: 0 0 0 50px;
+            }
+        }
+    }
 }
 
 @media (max-width:756px) {
-
+    .promo {
+        .dots{
+            &__line {
+                &-right {
+                    width: 250px;
+                }
+                &-left {
+                    width: 250px;
+                    left: -265px;
+                }
+            }
+        }
+    }
+    .benefits {
+        &__points {
+            grid-template-columns: repeat(1, 450px);
+        }
+        &__item {
+            grid-template-columns: 70px 380px;
+        }
+    }
+    .agents {
+        &__wrapper {
+            padding-top: 60px;
+        }
+        &__dscr {
+            padding: 23px 50px 0 50px;
+        }
+    }
+    .order {
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        input {
+            width: 60%;
+            margin: 5px auto 0 auto;
+        }
+        &__btn {
+            top: 390px;
+        }     
+    }
 }
 
 @media (max-width:575px) {
-    
+    .hamburger {
+        margin: 10px 5px 0 0;
+    }
+    .menu {
+        &__block {
+            width: 100%;
+        }
+    }
+    .header {
+        .contacts {
+            display: block;
+        }
+
+        &__phone {
+            margin-right: 0;
+            text-align: center;
+        }
+    }
+    .promo {
+        .dots{
+            &__line {
+                &-right {
+                    width: 130px;
+                }
+                &-left {
+                    width: 130px;
+                    left: -145px;
+                }
+            }
+        }
+        &__dscr {
+            font-size: 12px;
+        }
+        &__title {
+            font-size: 33px;
+        }
+        &__subtitle {
+            font-size: 18px;
+        }
+    }
+    .benefits {
+        &__title {
+            font-size: 15px;
+        }
+        &__points {
+            grid-template-columns: repeat(1, 300px);
+            row-gap: 35px;
+            padding-top: 40px;
+        }
+        &__item {
+            grid-template-columns: 62px 238px;
+        }
+        &__img {
+            img {
+                width: 50px;
+                height: 50px;
+            }
+        }
+        &__dscr {
+            font-size: 13px;
+        }
+    }
+    .work {
+        &__item {
+            margin: 0 auto;
+        }
+        &__items {
+            width: 100%;
+            p {
+                width: 280px;
+                font-size: 15px;
+            }
+        }
+        &__img {
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .agents {
+        &__wrapper {
+            padding-top: 50px;
+        }
+        &__title {
+            padding-top: 30px;
+        }
+        &__dscr {
+            padding: 23px 0 0 0;
+            font-size: 15px;
+        }
+    }
+    .order {
+        &__img {
+            width: 92.7%;
+            top: 85px;
+        }
+        form {
+            padding: 50px 0;
+        }
+        input {
+            width: 90%;
+        }
+        &__btn {
+            width: 91.7%;
+            top: 382px;
+        }
+    }
 }

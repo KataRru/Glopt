@@ -1,7 +1,8 @@
 .promo {
+    padding: 0 0 50px 0;
     position: relative;
-    height: 100vh;
-    background: url(../img/promo_bg.png) center (center / cover) no-repeat;
+    min-height: 100vh;
+    background: url(../img/promo_bg.png) no-repeat 50% / cover;
     &__inner {
         padding-top: 30px;
         text-align: center;
@@ -27,16 +28,15 @@
         line-height: 1.2;
     }
     .dots  {
-        position: absolute;
+        margin: 0 auto;
         margin-top: 38px;
         width: 10px;
         height: 10px;
         background-color: #fff;
         border-radius: 100%;
-        right: 50%;
     &__line {
         &-right {
-            position: absolute;
+            position: relative;
             top: 5px;
             display: block;
             width: 400px;
@@ -45,7 +45,7 @@
             background-color: #fff;
         }
         &-left {
-            position: absolute;
+            position: relative;
             top: 5px;
             left: -414px;
             display: block;
@@ -57,7 +57,7 @@
     }
     }
     &__item {
-        padding-top: 80px;
+        padding-top: 60px;
         display: flex;
         justify-content: space-around;
     }

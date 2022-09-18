@@ -12,7 +12,30 @@
 </head>
 <body>
 
-<section class="promo">
+<div class="menu">
+    <div class="menu__block">
+        <div class="menu__close"><img src="img/icons/closed.png" alt="closed"></div>
+        <div class="menu__logo"><a href="#promo"><img src="img/icons/logo.png" alt="logo"></a></div>
+        <nav>
+            <ul class="menu__list">
+                <li class="menu__link"><a href="#benefits">Преимущества</a></li>
+                <li class="menu__link"><a href="#work">Наша работа</a></li>
+                <li class="menu__link"><a href="#prices">Схема работы</a></li>
+                <li class="menu__link"><a href="#plan">Цены</a></li>
+                <li class="menu__link"><a href="#reviews">Отзывы</a></li>
+                <li class="menu__link"><a href="#questions">Контакты</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="menu__overlay"></div>
+</div>
+
+<section class="promo" id="promo">
+    <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
     <div class="container">
         <header class="header">
             <div class="header__item">
@@ -37,7 +60,7 @@
                         <a href="tel:79264230100" class="header__number">+7 (926) 423 01 00</a>
                     </div>
                     <div class="header__btn btn">
-                        <a href="#">перезвоните мне</a>
+                        <a href="#">перезвоните нам</a>
                     </div>
                 </div>
             </div>
@@ -158,23 +181,25 @@
 
 <section class="work" id="work">
     <div class="container">
-        <h2 class="work__title">Наша работа - больше чем просто доставка</h2>
-        <div class="work__subtitle">Мы организуем перевозки из Китая - оперативно и надежно, с учетом особенностей груза <br> и ваших требований по срокам и бюджету.</div>
-        <div class="work__item">
-            <div class="work__items">
-                <img src="img/insurance.jpg" alt="insurance">
-                <h3 class="work__items-title">Страховка груза</h3>
-                <p>Все грузы, логистику которых осуществляет Global Opt, застрахованы. Мы гарантируем полное возмещение стоимости груза в случаях, предусмотренных страхо- вым соглашением. Все ваши тревоги наша компания берет на себя.</p>
-            </div>
-            <div class="work__items">
-                <img src="img/logistics.jpg" alt="logistics">
-                <h3 class="work__items-title">Логистика последней мили</h3>
-                <p>Мы осуществляем доставку вашего груза до конкретного адреса. Привоз согласовывается менед- жерами по телефону, предварительно за сутки и за час до доставки. Также мы предоставляем услуги грузчи- ков по месту доставки груза.</p>
-            </div>
-            <div class="work__items">
-                <img src="img/future.jpg" alt="future">
-                <h3 class="work__items-title">Мы всегда смотрим вперед</h3>
-                <p>Философия нашей компании, делать себя и своих партнеров по всему миру, успешными и богатыми. Поэтому мы всегда открыты к диалогу о партнерстве и инвестициях. </p>
+        <div class="work__wrapper">
+            <h2 class="work__title">Наша работа - больше чем просто доставка</h2>
+            <div class="work__subtitle">Мы организуем перевозки из Китая - оперативно и надежно, с учетом особенностей груза <br> и ваших требований по срокам и бюджету.</div>
+            <div class="work__item">
+                <div class="work__items">
+                    <div class="work__img"><img src="img/insurance.jpg" alt="insurance"></div>
+                    <h3 class="work__items-title">Страховка груза</h3>
+                    <p>Все грузы, логистику которых осуществляет Global Opt, застрахованы. Мы гарантируем полное возмещение стоимости груза в случаях, предусмотренных страхо- вым соглашением. Все ваши тревоги наша компания берет на себя.</p>
+                </div>
+                <div class="work__items">
+                    <div class="work__img"><img src="img/logistics.jpg" alt="logistics"></div>
+                    <h3 class="work__items-title">Логистика последней мили</h3>
+                    <p>Мы осуществляем доставку вашего груза до конкретного адреса. Привоз согласовывается менед- жерами по телефону, предварительно за сутки и за час до доставки. Также мы предоставляем услуги грузчи- ков по месту доставки груза.</p>
+                </div>
+                <div class="work__items">
+                    <div class="work__img"><img src="img/future.jpg" alt="future"></div>
+                    <h3 class="work__items-title">Мы всегда смотрим вперед</h3>
+                    <p>Философия нашей компании, делать себя и своих партнеров по всему миру, успешными и богатыми. Поэтому мы всегда открыты к диалогу о партнерстве и инвестициях. </p>
+                </div>
             </div>
         </div>
     </div>
@@ -182,8 +207,8 @@
 
 <section class="agents" id="agents">
     <div class="container">
-        <div class="agents__item">
-            <div class="agents__wrapper">
+        <div class="agents__wrapper">
+            <div class="agents__item">
                 <div class="agents__img">
                     <img src="img/icons/agents.png" alt="agents">
                 </div>
@@ -240,20 +265,23 @@
         </div>
 
         <div class="order" id="order">
-            <h2 class="order__title">Заказать бесплатную кансультацию</h2>
-            <div class="order__img"><img src="img/icons/order.png" alt="order"></div>
-
-            <form class="order__form" action="#">
-                <input name="name" placeholder="Ваше имя" type="name">
-                <input name="phone" placeholder="Ваш номер телефона">
-                <input name="email" placeholder="Ваша E-mail" type="email">
-            </form>
-            <button class="order__btn btn">отправить заявку</button>
+            <div class="container">
+                <h2 class="order__title">Заказать бесплатную кансультацию</h2>
+                <div class="order__img"><img src="img/icons/order.png" alt="order"></div>
+                <form class="order__form" action="#">
+                    <input name="name" placeholder="Ваше имя" type="name">
+                    <input name="phone" placeholder="Ваш номер телефона">
+                    <input name="email" placeholder="Ваша E-mail" type="email">
+                </form>
+                <div class="order__btn">
+                    <button class="btn">отправить заявку</button>
+                </div>
+            </div>
         </div>
     </div>
 </section>
 
-<section class="managers" id="managers">
+<!-- <section class="managers" id="managers">
     <div class="container">
         <div class="managers__item">
             <div class="managers__wrapper">
@@ -266,73 +294,72 @@
                 поставки от завода-изготовителя.</div>
         </div>
     </div>
-</section>
+</section> -->
 
-<div class="plan" id="plan">
+<!-- <section class="plan" id="plan">
     <div class="container">
         <h2 class="plan__title">схема работы с нами</h2>
-            <div class="plan__wrapper">
-                <div class="plan__item">
-                    <div class="plan__items">
-                        <img src="img/icons/works/applications.png" alt="applications">
+        <div class="plan__wrapper">
+            <div class="plan__item">
+                <div class="plan__items">
+                    <img src="img/icons/works/applications.png" alt="applications">
+                    <div class="plan__dscr">
+                        <span>Заявка</span><br>
+                        Вы оставляете заявку на нашем сайте или звоните нам
+                    </div>
+                </div>
+                <div class="plan__items">
+                    <img class="item-1" src="img/icons/works/delivery_analytics.png" alt="analytics">
+                    <div class="plan__text">
                         <div class="plan__dscr">
-                            <span>Заявка</span><br>
-                            Вы оставляете заявку на нашем сайте или звоните нам
+                            <span>Аналитика доставки</span><br>
+                            Мы просчитываем варианты доставки Вашего груза
                         </div>
                     </div>
-                    <div class="plan__items">
-                        <img class="item-1" src="img/icons/works/delivery_analytics.png" alt="analytics">
-                        <div class="plan__text">
-                            <div class="plan__dscr">
-                                <span>Аналитика доставки</span><br>
-                                Мы просчитываем варианты доставки Вашего груза
-                            </div>
-                        </div>
-                    </div>
-                    <div class="plan__items">
-                        <img src="img/icons/works/treaty.png" alt="treaty">
-                        <div class="plan__text">
-                            <div class="plan__dscr">
-                                <span>Договор</span><br>
-                                Заключаем с Вами договор о поставке груза из Китая
-                            </div>
-                        </div>
-                    </div>
-                    <div class="plan__items">
-                        <img src="img/icons/works/warehouses.png" alt="warehouses">
+                </div>
+                <div class="plan__items">
+                    <img src="img/icons/works/treaty.png" alt="treaty">
+                    <div class="plan__text">
                         <div class="plan__dscr">
-                            <span>Доставка на наш склад</span><br>
-                            Связываемся с Вашим поставщиком в Китае и договариваемся о доставке груза на наш склад 
+                            <span>Договор</span><br>
+                            Заключаем с Вами договор о поставке груза из Китая
                         </div>
                     </div>
-                    <div class="plan__items">
-                        <img src="img/icons/works/cargo_check.png" alt="check">
-                        <div class="plan__dscr">
-                            <span>Проверка груза</span><br>
-                            Мы проверяем, собираем и упаковываем перед отправкой Ваш груз на своём складе
-                        </div>
+                </div>
+                <div class="plan__items">
+                    <img src="img/icons/works/warehouses.png" alt="warehouses">
+                    <div class="plan__dscr">
+                        <span>Доставка на наш склад</span><br>
+                        Связываемся с Вашим поставщиком в Китае и договариваемся о доставке груза на наш склад 
                     </div>
-                    <div class="plan__items">
-                        <img src="img/icons/works/cargo_delivery.png" alt="delivery">
-                        <div class="plan__dscr">
-                            <span>Доставка груза</span><br>
-                            Мы перевозим ваш груз до места назначения и производим таможенную очистку
-                        </div>
+                </div>
+                <div class="plan__items">
+                    <img src="img/icons/works/cargo_check.png" alt="check">
+                    <div class="plan__dscr">
+                        <span>Проверка груза</span><br>
+                        Мы проверяем, собираем и упаковываем перед отправкой Ваш груз на своём складе
                     </div>
-                    <div class="plan__items">
-                        <img src="img/icons/works/payment.png" alt="payment">
-                        <div class="plan__dscr">
-                            <span>Оплата</span><br>
-                            Оплачиваете доставку груза при получении 
-                        </div>
+                </div>
+                <div class="plan__items">
+                    <img src="img/icons/works/cargo_delivery.png" alt="delivery">
+                    <div class="plan__dscr">
+                        <span>Доставка груза</span><br>
+                        Мы перевозим ваш груз до места назначения и производим таможенную очистку
+                    </div>
+                </div>
+                <div class="plan__items">
+                    <img src="img/icons/works/payment.png" alt="payment">
+                    <div class="plan__dscr">
+                        <span>Оплата</span><br>
+                        Оплачиваете доставку груза при получении 
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+</section> -->
 
-<section class="reviews" id="reviews">
+<!-- <section class="reviews" id="reviews">
     <div class="container">
         <h2 class="reviews__title">отзывы наших клиентов</h2>
         <div class="reviews__subtitle">Мы всегда стараемся помочь клиентам, что бы они обращались к нам снова</div>
@@ -356,25 +383,27 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 
-<section class="questions" id="questions">
+<!-- <section class="questions" id="questions">
     <div class="container">
         <div class="questions__item">
-            <h2 class="questions__title">остались вопросы? <br> <span>напишите нам!</span></h2>
+            <h2 class="questions__title">остались вопросы?</h2>
+            <h3 class="questions__subtitle">напишите нам!</h3>
             <form class="questions__form" action="#">
                 <input name="name" placeholder="Ваше имя" type="name">
                 <input name="phone" placeholder="Ваш номер телефона">
                 <input name="email" placeholder="Ваша E-mail" type="email">
                 <textarea name="text" placeholder="Ваше сообщение"></textarea>
-                <div class="questions__btn btn">отправить заявку</div>
             </form>
         </div>
+        <div class="questions__btn">
+            <button class="btn">отправить заявку</button>
+        </div>
     </div>
-</section>
+</section> -->
 
-
-<footer class="footer">
+<!-- <footer class="footer">
     <div class="footer__map"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4491.595527881961!2d37.62810784327488!3d55.74464276128632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1662631527290!5m2!1sru!2sua" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
     <div class="container">
         <div class="footer__company">
@@ -397,7 +426,7 @@
             <div class="footer__creation">Создание сайта: <img src="img/icons/logo_creator.png" alt="creator"></div>
         </div>
     </div>
-</footer>
+</footer> -->
 
     
     <script src="js/main.min.js"></script>

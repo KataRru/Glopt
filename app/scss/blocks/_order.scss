@@ -1,4 +1,5 @@
 .order {
+    width: 100%;
     position: relative;
     &__title {
         padding-bottom: 80px;
@@ -6,17 +7,15 @@
     }
     &__img {
         position: absolute;
-        top:  66px;;
-        left: 46%;
-        width: 100px;
-        height: 100px;
+        top:  66px;
+        width: 96.7%;
         text-align: center;
-        margin: 0 auto;
-        border: solid 1px #ec644b;
-        border-radius: 50%;
-        padding: 17px 20px;
-        background-color: #fff;
-        
+        img {
+            padding: 19px 20px;
+            border-radius: 50%;
+            border: solid 1px #ec644b;
+            background-color: #fff;
+        }
     }
     form {
         border: 1px solid #cecece;
@@ -29,8 +28,10 @@
         }
     }
     &__btn {
+        max-width: 1200px;
+        width: 96.7%;
+        text-align: center;
         position: absolute;
-        left: 509px;
         top: 274px;
     }
 

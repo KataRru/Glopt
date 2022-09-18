@@ -1,6 +1,6 @@
 $(document).ready(function(){
   $('.slider__item').slick({
-    speed: 1000,
+    speed: 900,
     slidesToShow: 1,
     adaptiveHeight: true,
     centerMode: true,
@@ -8,3 +8,15 @@ $(document).ready(function(){
     nextArrow: '<button type="button" class="slick-next"><img src="../img/icons/slider/rightarrow.svg"></button>'
   });
 });
+
+const hamburger = document.querySelector('.hamburger'),
+    menu = document.querySelector('.menu'),
+    closeElem = document.querySelector('.menu__close')
+
+  hamburger.addEventListener('click', () => {
+          menu.classList.add('active');
+  });
+
+  closeElem.addEventListener('click', () => {
+    menu.classList.remove('active');
+  });
