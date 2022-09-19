@@ -221,8 +221,26 @@
             margin: 5px auto 0 auto;
         }
         &__btn {
-            top: 390px;
+            top: 416px;
         }     
+    }
+    .managers {
+        &__dscr {
+            width: 560px;
+        }
+    }
+    .footer {
+        &__contacts {
+            display: block;
+            text-align: center;
+        }
+        &__dscr {
+            margin-right: 60px;
+            width: 35%;
+        }
+        &__creation {
+            font-size: 10px;
+        }
     }
 }
 
@@ -319,8 +337,11 @@
         }
     }
     .order {
+        &__title {
+            padding-bottom: 103px;
+        }
         &__img {
-            width: 92.7%;
+            width: 95.7%;
             top: 85px;
         }
         form {
@@ -330,8 +351,51 @@
             width: 90%;
         }
         &__btn {
-            width: 91.7%;
-            top: 382px;
+            width: 95.7%;
+            top: 379px;
+        }
+    }
+    .managers {
+        &__dscr {
+            width: 440px;
+        }
+    }
+    .footer {
+        &__logo {
+            display: none;
+        }
+        &__dscr {
+            margin-top: 40px;
+            margin-right: 0;
+            width: 50%;
+        }
+        &__site {
+            font-size: 5px;
+        }
+        &__policy {
+            font-size: 7px;
+        }
+    }
+}
+
+@media (max-width: 455px) {
+    .order {
+        &__title {
+            padding-bottom: 70px;
+            font-size: 18px;
+        }
+        &__img {
+            top: 43px;
+            width: 92.7%;
+        }
+        &__btn {
+            width: 92.7%;
+            top: 336px;
+        }
+    }
+    .managers {
+        &__dscr {
+            width: 290px;
         }
     }
 }

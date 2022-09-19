@@ -2,12 +2,13 @@
     width: 100%;
     position: relative;
     &__title {
+        font-size: 27px;
         padding-bottom: 80px;
         text-align: center;
     }
     &__img {
         position: absolute;
-        top:  66px;
+        top:  63px;
         width: 96.7%;
         text-align: center;
         img {
