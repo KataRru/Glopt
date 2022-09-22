@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -30,42 +30,44 @@
     <div class="menu__overlay"></div>
 </div>
 
-<section class="promo" id="promo">
+<header class="header">
     <div class="hamburger">
         <span></span>
         <span></span>
         <span></span>
     </div>
     <div class="container">
-        <header class="header">
-            <div class="header__item">
-                <div class="header__logo">
-                    <a href="#">
-                        <img src="img/icons/logo.png" alt="logo">
-                    </a>
+        <div class="header__item">
+            <div class="header__logo">
+                <a href="#">
+                    <img src="img/icons/logo.png" alt="logo">
+                </a>
+            </div>
+            <nav>
+                <ul class="header__menu">
+                    <li class="header__link"><a href="#benefits">Преимущества</a></li>
+                    <li class="header__link"><a href="#work">Наша работа</a></li>
+                    <li class="header__link"><a href="#prices">Цены</a></li>
+                    <li class="header__link"><a href="#plan">Схема работы</a></li>
+                    <li class="header__link"><a href="#reviews">Отзывы</a></li>
+                    <li class="header__link"><a href="#questions">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="contacts">
+                <div class="header__phone">
+                    <div class="header__dscr">Есть вопросы?</div>
+                    <a href="tel:79264230100" class="header__number">+7 (926) 423 01 00</a>
                 </div>
-                <nav>
-                    <ul class="header__menu">
-                        <li class="header__link"><a href="#benefits">Преимущества</a></li>
-                        <li class="header__link"><a href="#work">Наша работа</a></li>
-                        <li class="header__link"><a href="#prices">Цены</a></li>
-                        <li class="header__link"><a href="#plan">Схема работы</a></li>
-                        <li class="header__link"><a href="#reviews">Отзывы</a></li>
-                        <li class="header__link"><a href="#questions">Контакты</a></li>
-                    </ul>
-                </nav>
-                <div class="contacts">
-                    <div class="header__phone">
-                        <div class="header__dscr">Есть вопросы?</div>
-                        <a href="tel:79264230100" class="header__number">+7 (926) 423 01 00</a>
-                    </div>
-                    <div class="header__btn btn">
-                        <a href="#">перезвоните нам</a>
-                    </div>
+                <div class="header__btn btn">
+                    <a href="#">перезвоните нам</a>
                 </div>
             </div>
-        </header>
+        </div>
+    </div>
+</header>
 
+<section class="promo" id="promo">
+    <div class="container">
         <div class="promo__inner">
             <div class="promo__dscr">Global Opt - логистика полного цикла из Китая в Россию</div>
             <h1 class="promo__title">Доставка грузов из Китая</h1>
@@ -213,8 +215,8 @@
                     <img src="img/icons/agents.png" alt="agents">
                 </div>
             </div>
-            <h2 class="agents__title">Агент в Китае</р>
-            <div class="agents__dscr">Русскоговорящие представители компании без труда найдут именно тот товар, который будет отвечать Вашим запросам как по качеству, так и по цене.</div>
+            <h2 class="agents__title">Агент в Китае</h2>
+            <div class="agents__dscr"> Русскоговорящие представители компании без труда найдут именно тот товар, который будет отвечать Вашим запросам как по качеству, так и по цене.</div>
         </div>
     </div>
 </section>
@@ -269,14 +271,20 @@
                 <div class="order__item">
                     <h2 class="order__title">Заказать бесплатную кансультацию</h2>
                     <div class="order__img"><img src="img/icons/order.png" alt="order"></div>
-                    <form class="order__form" action="#">
-                        <input name="name" placeholder="Ваше имя" type="name">
-                        <input name="phone" placeholder="Ваш номер телефона">
-                        <input name="email" placeholder="Ваша E-mail" type="email">
+                    <form class="order__form" id="orderForm" action="#">
+                        <div class="order__form-inner">
+                            <div class="order__form-container">
+                                <input name="name" placeholder="Ваше имя">
+                            </div>
+                            <div class="order__form-container">
+                                <input name="phone" placeholder="Ваш номер телефона">
+                            </div>
+                            <div class="order__form-container">
+                                <input name="email" placeholder="Ваша E-mail" type="email">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn">отправить заявку</button>
                     </form>
-                    <div class="order__btn">
-                        <button class="btn">отправить заявку</button>
-                    </div>
                 </div>
             </div>
         </div>
@@ -361,52 +369,57 @@
     </div>
 </section>
 
-<!-- <section class="reviews" id="reviews">
+<section class="reviews" id="reviews">
     <div class="container">
         <h2 class="reviews__title">отзывы наших клиентов</h2>
         <div class="reviews__subtitle">Мы всегда стараемся помочь клиентам, что бы они обращались к нам снова</div>
         <div class="slider">
-            <div class="slider__item">
-                <div class="slider__items">
-                    <img src="img/icons/slider/photo.png" alt="photo">
-                    <div class="slider__title">Анисимова Ольга</div>
-                    <p class="slider__dscr">Хочу рассказать о компании Global Opt. Самое главное что меня радует, это быстрый поиск и анализ определенного товара. Доставляла через компанию уже много раз, от расходных материалов для отеля, ло дольших партий детской одежды. Буду продолжать пользтваьбся услугами даной компании.</p>
-                </div>
-                <div class="slider__items">
-                    <img src="img/icons/slider/photo.png" alt="photo">
-                    <div class="slider__title">Анисимова Ольга</div>
-                    <p class="slider__dscr">Хочу рассказать о компании Global Opt. Самое главное что меня радует, это быстрый поиск и анализ определенного товара. Доставляла через компанию уже много раз, от расходных материалов для отеля, ло дольших партий детской одежды. Буду продолжать пользтваьбся услугами даной компании.</p>
-                </div>
-                <div class="slider__items">
-                    <img src="img/icons/slider/photo.png" alt="photo">
-                    <div class="slider__title">Анисимова Ольга</div>
-                    <p class="slider__dscr">Хочу рассказать о компании Global Opt. Самое главное что меня радует, это быстрый поиск и анализ определенного товара. Доставляла через компанию уже много раз, от расходных материалов для отеля, ло дольших партий детской одежды. Буду продолжать пользтваьбся услугами даной компании.</p>
-                </div>
+            <div class="slider__items">
+                <img src="img/icons/slider/photo.png" alt="photo">
+                <h2 class="slider__title">Анисимова Ольга</h2>
+                <p class="slider__dscr">Хочу рассказать о компании Global Opt. Самое главное что меня радует, это быстрый поиск и анализ определенного товара. Доставляла через компанию уже много раз, от расходных материалов для отеля, ло дольших партий детской одежды. Буду продолжать пользтваьбся услугами даной компании.</p>
+            </div>
+            <div class="slider__items">
+                <img src="img/icons/slider/photo.png" alt="photo">
+                <h2 class="slider__title">Анисимова Ольга</h2>
+                <p class="slider__dscr">Хочу рассказать о компании Global Opt. Самое главное что меня радует, это быстрый поиск и анализ определенного товара. Доставляла через компанию уже много раз, от расходных материалов для отеля, ло дольших партий детской одежды. Буду продолжать пользтваьбся услугами даной компании.</p>
+            </div>
+            <div class="slider__items">
+                <img src="img/icons/slider/photo.png" alt="photo">
+                <h2 class="slider__title">Анисимова Ольга</h2>
+                <p class="slider__dscr">Хочу рассказать о компании Global Opt. Самое главное что меня радует, это быстрый поиск и анализ определенного товара. Доставляла через компанию уже много раз, от расходных материалов для отеля, ло дольших партий детской одежды. Буду продолжать пользтваьбся услугами даной компании.</p>
             </div>
         </div>
     </div>
-</section> -->
+</section>
 
-<!-- <section class="questions" id="questions">
+<section class="questions">
     <div class="container">
         <div class="questions__item">
-            <h2 class="questions__title">остались вопросы?</h2>
-            <h3 class="questions__subtitle">напишите нам!</h3>
-            <form class="questions__form" action="#">
-                <input name="name" placeholder="Ваше имя" type="name">
-                <input name="phone" placeholder="Ваш номер телефона">
-                <input name="email" placeholder="Ваша E-mail" type="email">
-                <textarea name="text" placeholder="Ваше сообщение"></textarea>
-            </form>
-        </div>
-        <div class="questions__btn">
-            <button class="btn">отправить заявку</button>
+            <h2 class="questions__title">остались вопросы? <br><span>напишите нам!</span></h2>
+            <div class="questions__wrapper">
+                <form class="questions__form" id="loginForm" action="#">
+                    <div class="questions__form-inner">
+                        <div class="questions__form-container">
+                            <input name="name" required placeholder="Ваше имя">
+                        </div>
+                        <div class="questions__form-container">
+                            <input name="phone" required placeholder="Ваш номер телефона">
+                        </div>
+                        <div class="questions__form-container">
+                            <input name="email" required placeholder="Ваша E-mail" type="email">
+                        </div>
+                    </div>
+                    <textarea name="text"  placeholder="Ваше сообщение"></textarea>
+                    <button type="submit" class="btn">отправить заявку</button>
+                </form>
+            </div>
         </div>
     </div>
-</section> -->
+</section>
 
 <footer class="footer">
-    <div class="footer__map"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4491.595527881961!2d37.62810784327488!3d55.74464276128632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1662631527290!5m2!1sru!2sua" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    <div class="footer__map"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4491.595527881961!2d37.62810784327488!3d55.74464276128632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1662631527290!5m2!1sru!2sua" width="100%" height="500" style="border:0;" allowfullscreen></iframe></div>
     <div class="container">
         <div class="footer__company">
             <div class="footer__logo"><img class="footer__img" src="img/icons/logo.png" alt="logo"></div>
@@ -430,10 +443,13 @@
     </div>
 </footer>
 
-    
-    <script src="js/main.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/1.2.1/jquery-migrate.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
