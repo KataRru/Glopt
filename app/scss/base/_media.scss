@@ -231,6 +231,7 @@
             label {
                 float: left;
                 margin-left: 55px;
+                font-size: 10px;
             }
         }   
     }
@@ -273,8 +274,8 @@
             }
             label {
                 float: left;
-                margin-left: 75px;
-                font-size: 11px;
+                margin-left: 47px;
+                font-size: 10px;
             }
         }
     }
@@ -474,12 +475,12 @@
     }
 }
 
-@media (max-width: 335px) {
+@media (max-width: 320px) {
     .order {
         form {
             label {
-                margin-left: 48px;
-                font-size: 9px;
+                margin-left: 41px;
+                font-size: 7px;
             }
         }
     }
@@ -487,7 +488,7 @@
         form {
             label {
                 margin-left: 24px;
-                font-size: 9px;
+                font-size: 7px;
             }
         }
     }
