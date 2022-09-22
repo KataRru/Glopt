@@ -334,9 +334,6 @@
         }
     }
     .benefits {
-        &__title {
-            font-size: 15px;
-        }
         &__points {
             grid-template-columns: repeat(1, 300px);
             row-gap: 35px;
@@ -480,15 +477,16 @@
     .order {
         form {
             label {
-                margin-left: 50px;
-                font-size: 10px;
+                margin-left: 48px;
+                font-size: 9px;
             }
         }
     }
     .questions {
         form {
             label {
-                margin-left: 6px;
+                margin-left: 24px;
+                font-size: 9px;
             }
         }
     }
