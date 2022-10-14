@@ -75,8 +75,10 @@
         color: #fff;
     }
     &__btn {
+        position: relative;
+        bottom: -150px;
         width: 190px;
-        margin: 40px auto 0 auto;
+        margin:0 auto;
         a {
             color: #fff;
             text-decoration: none;
