@@ -4,7 +4,7 @@ $(document).ready(function(){
     slidesToShow: 1,
     adaptiveHeight: true,
     centerMode: true,
-    prevArrow: '<button type="button" class="slick-prev"><img src="gulp img/icons/slider/left-arrow.png"></button>',
+    prevArrow: '<button type="button" class="slick-prev"><img src="img/icons/slider/left-arrow.png"></button>',
     nextArrow: '<button type="button" class="slick-next"><img src="img/icons/slider/right-arrow.png"></button>'
   });
 });

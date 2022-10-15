@@ -188,6 +188,9 @@
         &__subtitle {
             font-size: 25px;
         }
+        &__btn {
+            display: none;
+        }
         .dots{
             &__line {
                 &-right {
@@ -451,11 +454,10 @@
 @media (max-width: 455px) {
     .order {
         &__title {
-            padding-bottom: 70px;
-            font-size: 18px;
+            padding-bottom: 60px;
         }
         &__img {
-            top: 43px;
+            top: 75px;
             width: 92.7%;
         }
         &__btn {

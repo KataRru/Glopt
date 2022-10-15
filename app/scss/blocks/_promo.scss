@@ -75,10 +75,11 @@
         color: #fff;
     }
     &__btn {
-        position: relative;
-        bottom: -150px;
+        position: absolute;
+        bottom: 170px;
+        left: 50%;
+        transform: translateX(-50%);
         width: 190px;
-        margin:0 auto;
         a {
             color: #fff;
             text-decoration: none;
