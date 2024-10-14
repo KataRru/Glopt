@@ -8,9 +8,9 @@
     }
     &__img {
         position: absolute;
+        right: 50%;
+        transform: translateX(50%);
         top:  63px;
-        width: 96.7%;
-        text-align: center;
         img {
             padding: 19px 20px;
             border-radius: 50%;
