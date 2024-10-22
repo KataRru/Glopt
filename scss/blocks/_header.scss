@@ -1,0 +1,42 @@
+.header {
+    position: absolute;
+    width: 100%;
+    padding-top: 23px;
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__link {
+        margin: 0 12px 0 12px;
+        list-style-type: none;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 1.114;
+        color: #fff;   
+    }
+    &__dscr {
+        font-size: 12px;
+        font-weight: 300;
+        padding: 0 0 0 70px;
+        color: #fff;
+    }
+    &__phone {
+        margin-right: 19px;
+        font-size: 19px;
+        color: #fff;
+    }
+    a {
+        text-decoration: none;
+        color: #fff;
+        cursor: pointer;
+    }
+    .contacts {
+        display: flex;
+    }
+}
