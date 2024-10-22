@@ -1,0 +1,43 @@
+.plan {
+    padding-top: 40px;
+    background-color: rgb(243, 243, 243);
+    &__title {
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 0.885;
+    }
+    &__item {
+        padding: 29px 0 46px 0;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    &__items {
+        margin: 15px 14px;
+        .item-1 {
+            padding: 5px 0;
+        }
+        img {
+            padding: 5px 0 14px 0;
+        }
+    }
+    &__text {
+        margin: 2px 0 0 0;
+    }
+    &__dscr  {
+        width: 265px;
+        font-size: 16px;
+        line-height: 1.355;
+        text-align: center;    
+        span {
+            font-size: 16px;
+            color: rgb(236, 100, 75);
+            font-weight: bold;
+            line-height: 1.25;
+            text-align: center;
+        }
+    }
+}
